@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import ButtonTop from "./components/ButtonTop/ButtonTop";
+import SectionOne from "./components/SectionOne/SectionOne";
+import Product from "./components/Product/Product";
+import Services from "./components/Services/Services";
+import About from "./components/About/About";
+import Order from "./components/Order/Order";
+import Comment from "./components/Comment/Comment";
+import Galery from "./components/Galery/Galery";
+import Media from "./components/Media/Media";
+import Footer from "./components/Footer/Footer";
+import { useState } from "react";
+import Loading from "./components/Loading/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  window.onload = () => {
+    setLoading(false);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <Header />
+      <ButtonTop />
+      <SectionOne />
+      <Product />
+      <Services />
+      <About />
+      <Order />
+      <Comment />
+      <Galery />
+      <Media />
+      <Footer />
+      {loading && <Loading />}
     </div>
   );
 }

@@ -1,0 +1,107 @@
+.section-two {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .section-two h2 {
+    font-size: 27px;
+    color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-two img {
+    width: 150px;
+  }
+  
+  .section-two .swiper-button-next,
+  .section-two .swiper-button-prev {
+    height: 4rem;
+    width: 4rem;
+    color: #FFD369;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 2rem;
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: #fff;
+  }
+  
+  .item-card {
+    border: 1px solid #FFD369;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .item-card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(230deg, #e3ca56 0%, #e6a729 100%);
+    position: absolute;
+    top: -70px;
+    right: -20px;
+    z-index: -1;
+    clip-path: circle(250px at 100% 0%);
+    transition: all .3s linear;
+  }
+  
+  .item-card:hover::after {
+    clip-path: circle(200px at 80% 10%);
+    top: -10px;
+  }
+  
+  .item-card:hover .name,
+  .item-card:hover .price {
+    transform: translateY(-10px);
+  }
+  
+  .item-card:hover img {
+    transform: translateY(-10px) scale(1.05);
+  }
+  
+  .item-card img {
+    width: 300px;
+  }
+  
+  .item-card .name {
+    font-size: 25px;
+    color: #EEEEEE;
+  }
+  
+  .item-card .price {
+    font-size: 18px;
+    margin: 10px;
+    color: #EEEEEE;
+  }
+  
+  .item-card .btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #e3ca56 50%, rgba(255, 255, 255, 0.08) 50%);
+    background-size: 200%;
+    color: #121212;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+  }
+  
+  .item-card .btn:hover {
+    color: #FFD369;
+    border: 2px solid #FFD369;
+    background-position: -100%;
+  }
+  

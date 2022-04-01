@@ -1,0 +1,43 @@
+.media {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .media .img {
+    width: 150px;
+  }
+  
+  .media h2 {
+    font-size: 20px;
+    color: #FFD369;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .social-media a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #FFD369;
+    cursor: pointer;
+    transition: all .1s ease;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: #FFD369;
+    color: #121212;
+  }

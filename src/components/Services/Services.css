@@ -1,0 +1,62 @@
+.works {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-top: 100px;
+    background: url(/public/images/kindpng3.png) no-repeat;
+    background-size: 300px;
+    background-position: 0 70px;
+  }
+  
+  .works h2 {
+    font-size: 27px;
+    color: #EEEEEE;
+  }
+  
+  .works-Box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .works-Box .box {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 15px;
+  }
+  
+  .works-Box .box i {
+    background-color: #FFD369;
+    padding: 30px;
+    font-size: 30px;
+    color: #FFD369;
+    cursor: pointer;
+    color: #121212;
+    border-radius: 50%;
+  }
+  
+  .works-Box .box h3 {
+    font-size: 22px;
+    color: #FFD369;
+  }
+  
+  .works-Box .box p {
+    font-size: 16px;
+    color: #EEEEEE;
+  }
+  

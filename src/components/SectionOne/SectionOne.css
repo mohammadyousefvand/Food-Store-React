@@ -1,0 +1,91 @@
+.section {
+    width: 100%;
+    color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: url(/public/images/kindpng.png) no-repeat;
+    background-position: 0 100%;
+    background-size: 300px;
+  }
+  
+  .section .hamberger-image {
+    position: relative;
+  }
+  
+  .section .hamberger-image::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(230deg, #e3ca56 0%, #e6a729 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .section .hamberger-image img {
+    width: 500px;
+    animation: hamberger 2s linear .5s infinite alternate;
+    z-index: 5555;
+  }
+  
+  .section .section-one-bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 80px;
+    z-index: 10;
+  }
+  
+  .section .section-one-bio h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #FFD369;
+  }
+  
+  .section .section-one-bio p {
+    font-size: 16px;
+    color: #EEEEEE;
+    transform: translateY(-10px);
+    text-align: justify;
+  }
+  
+  .section .section-one-bio .btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #e3ca56 50%, rgba(255, 255, 255, 0.08) 50%);
+    background-size: 200%;
+    color: #121212;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  
+  .section .section-one-bio .btn:hover {
+    color: #FFD369;
+    border: 2px solid #FFD369;
+    background-position: -100%;
+  }
+  
+  @keyframes hamberger {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }

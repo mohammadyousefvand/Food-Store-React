@@ -1,0 +1,49 @@
+.footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .footer .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .footer .btn-box .btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #e3ca56 50%, rgba(255, 255, 255, 0.08) 50%);
+    background-size: 200%;
+    color: #121212;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .footer .btn-box .btn:hover {
+    color: #FFD369;
+    border: 2px solid #FFD369;
+    background-position: -100%;
+  }
+  
+  .footer .author {
+    font-size: 1rem;
+    color: #FFD369;
+    margin-top: 1.5rem;
+  }
+  

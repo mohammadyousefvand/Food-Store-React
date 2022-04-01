@@ -1,13 +1,199 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "font1";
+  src: url(../public/fonts/1.eot);
+  src: url(../public/fonts/1.eot) format("embedded-opentype"), url(../public/fonts/6.woff2) format("woff2"), url(../public/fonts/5.woff) format("woff"), url(../public/fonts/4.ttf) format("truetype"), url(../public/fonts/3.svg) format("svg");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "font1";
+  transition: all .5s;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+::selection {
+  background-color: #FFD369;
+  color: #121212;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFD369;
+  border-radius: 50px;
+  width: 5px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  direction: rtl;
+  background-color: #121212;
+}
+
+.main-container {
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    background-size: 250px;
+  }
+
+  .section .hamberger-image img {
+    width: 400px;
+  }
+
+  .image img {
+    width: 500px;
+  }
+
+  .works {
+    background-size: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header img {
+    width: 150px;
+  }
+
+  .nav li {
+    padding: 5px 10px;
+  }
+
+  .section {
+    flex-direction: column;
+    background-size: 150px;
+  }
+
+  .section .section-one-bio {
+    padding: 10px 20px;
+  }
+
+  .section .hamberger-image::before {
+    width: 400px;
+    height: 400px;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icons p {
+    margin: 8px 15px;
+  }
+
+  .content h3 {
+    text-align: center;
+  }
+
+  .content img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    background-color: #121212;
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: -100%;
+    padding: 40px;
+    border-left: 5px solid #FFD369;
+    z-index: 100000000000000;
+    transition: all .6s;
+  }
+
+  .nav li {
+    padding: 10px 0;
+  }
+
+  .nav-show {
+    right: 0;
+  }
+
+  .icon #menu-btn {
+    display: block;
+  }
+
+  .rotate {
+    transform: rotate(90deg);
+  }
+
+  .bottom-order {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order-img,
+  .input-order {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section .hamberger-image::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section .hamberger-image img {
+    width: 300px;
+  }
+
+  .section .section-one-bio h1 {
+    font-size: 25px;
+    color: #FFD369;
+  }
+
+  .section .section-one-bio p {
+    font-size: 14px;
+    color: #EEEEEE;
+  }
+
+  .search-container input {
+    width: 250px;
+  }
+
+  .cards .item-card img {
+    width: 250px;
+  }
+
+  .image img {
+    width: 300px;
+  }
+
+  .content {
+    align-items: center;
+    padding: 0 10px;
+  }
 }

@@ -1,0 +1,126 @@
+.order {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .order .title-img {
+    width: 150px;
+  }
+  
+  .order h2 {
+    font-size: 24px;
+    color: #FFD369;
+  }
+  
+  .order .btn {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(90deg, #e3ca56 50%, rgba(255, 255, 255, 0.08) 50%);
+    background-size: 200%;
+    color: #121212;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .order .btn:hover {
+    color: #FFD369;
+    border: 2px solid #FFD369;
+    background-position: -100%;
+  }
+  
+  .bottom-order {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .order-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .order-img img {
+    width: 95%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .input-order {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  
+  .input-order input {
+    padding-right: 20px;
+    outline: none;
+    border: none;
+    background: #000;
+    color: #FFD369;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .input-order input:focus {
+    border: 1px solid #FFD369;
+  }
+  
+  .input-order textarea {
+    width: 80%;
+    height: 140px;
+    padding: 20px 10px 0;
+    border: #121212;
+    border-radius: 5px;
+    outline: none;
+    background: #000;
+    color: #FFD369;
+    font-size: 18px;
+    resize: none;
+  }
+  
+  .input-order textarea:focus {
+    border: 1px solid #FFD369;
+  }
+  
+  .input-order .addres {
+    width: 90%;
+    height: 120px;
+  }
+  
+  .inputs-wrap-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .inputs-wrap-box .input-wrap {
+    width: 80%;
+    height: 45px;
+  }
